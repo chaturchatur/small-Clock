@@ -1,0 +1,150 @@
+body {
+    overflow: hidden;
+}
+
+.navbar-brand, .nav-link{
+    color: var(--bs-primary);
+}
+
+.timer-text  {
+    border-color: transparent;
+    outline: none;
+    border-radius: 10px;
+    background-color: var(--bs-body-bg);
+    color: var(--bs-primary);
+    height: 500px;
+    width: 540px;
+    font-size: 400px;
+    font-weight: 700;
+}
+
+.timer-text:focus {
+    background-color: var(--bs-body-color);
+    color: var(--bs-body-bg);
+
+}
+
+.timer-text::selection {
+    background-color: var(--bs-primary);
+}
+
+.clock-container {
+    width: 540px;
+}
+
+.colon {
+    color: var(--bs-primary);
+    font-size: 300px;
+    font-weight: 800;
+}
+
+.timer-range {
+    width: 98%;
+}
+
+.clock {
+    margin-bottom: 74px;
+}
+
+.retro-button {
+    background-color: var(--bs-primary); /* Primary color */
+    color: black; /* Text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding around text */
+    margin: 5px;
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Cursor changes to pointer to indicate it's clickable */
+    outline: none; /* Removes the outline */
+    box-shadow: 0 5px var(--bs-primary-rgb); /* Shadow to create the 3D effect */
+    border-radius: 5px; /* Slightly rounded corners */
+    transition: all 0.3s ease; /* Transition for smooth effect */
+    }
+
+.retro-button:active {
+    box-shadow: 0 1px var(--bs-primary-rgb); /* Less shadow to look like it's pressed */
+    transform: translateY(4px); /* Moves the button down to look like it's pressed */
+}
+
+input[type=text]:focus{
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    background: #1e1e1e;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background-color: #7f7f7f;
+}
+
+input[type=range]::-webkit-slider-thumb:active {
+    background-color: var(--bs-primary);
+}
+
+.card {
+    background-color: white;
+    width: 700px;
+}
+
+.card-preview {
+    background-color: var(--bs-body-bg); 
+    color: white; 
+    border-radius: 5px;
+}
+
+.card-body {
+    color: var(--bs-body-bg);
+}
+
+@media (max-width: 767.98px) {
+    body {
+        overflow: hidden;
+    }
+
+    .timer-text {
+        width: 350px;
+        height: 200px;
+        font-size: 200px;
+    }
+
+    .card {
+        width: 300px;
+    }
+}
+
+[data-bs-theme="purple"] {
+    --bs-body-color: var(--bs-white);
+    --bs-body-color-rgb: #{to-rgb($white)};
+    --bs-body-bg: var(--bs-black);
+    --bs-body-bg-rgb: #{to-rgb($black)};
+    --bs-tertiary-bg: #{$black};
+    --bs-primary: #536dfe;
+    --bs-primary-rgb: rgba(83, 109, 254, 0.5);
+}
+
+[data-bs-theme="yellow"] {
+    --bs-body-color: var(--bs-white);
+    --bs-body-color-rgb: #{to-rgb($white)};
+    --bs-body-bg: var(--bs-black);
+    --bs-body-bg-rgb: #{to-rgb($black)};
+    --bs-tertiary-bg: #{$black};
+    --bs-primary: #FFEE58;
+    --bs-primary-rgb: rgba(255, 238, 88, 0.5);
+}
+
+[data-bs-theme="teal"] {
+    --bs-body-color: var(--bs-white);
+    --bs-body-color-rgb: #{to-rgb($white)};
+    --bs-body-bg: var(--bs-black);
+    --bs-body-bg-rgb: #{to-rgb($black)};
+    --bs-tertiary-bg: #{$black};
+    --bs-primary: #64FFDA;
+    --bs-primary-rgb: rgba(100, 255, 218, 0.5);
+}
+
+
+
+
+
+

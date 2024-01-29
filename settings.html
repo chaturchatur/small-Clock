@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="yellow">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <span class="h1 navbar-brand">small Clock</span>
+            <nav class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <button id="open-fl-bt" class="btn btn-outline-dark" onclick="">
+                            <i class="bi bi-box-arrow-left"></i>
+                            <span>Back</span>
+                        </button>
+                    </a>
+                </li>
+            </nav>
+        </div>
+    </nav>
+    <main>
+        <div class="container-fluid d-flex flex-column align-items-center">
+            <div class="row mb-3">
+                <span class="h1">Preferences</span>
+            </div>
+            <div class="row mb-3">
+                <form id="settings-form">
+                    <div class="card mb-3 ">
+                        <div class="row g-0" style="outline:4px solid white; border-radius: 5px;">
+                            <div class="card-preview col-md-4 p-2 d-flex flex-column align-items-center justify-content-center">
+                                <span class="h1" id="card-preview-clock">00:00:00</span>
+                                <button class="retro-button" id="card-preview-btn" disabled>Start</button>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title d-md-block d-flex justify-content-center">Set your theme</h5>
+                                    <div class="card-text d-none d-md-block">
+                                        <div class="btn-group btn-group-lg" role="group" aria-label="Basic radio toggle button group">
+                                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" value="yellow" autocomplete="off">
+                                            <label class="btn btn-light" for="btnradio1">Black+Yellow</label>
+                                          
+                                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" value="teal" autocomplete="off">
+                                            <label class="btn btn-light" for="btnradio2">Black+Teal</label>
+                                          
+                                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" value="purple" autocomplete="off">
+                                            <label class="btn btn-light" for="btnradio3">Black+Purple</label>
+                                        </div>
+                                    </div>
+                                    <div class="card-text d-flex d-md-none justify-content-center">
+                                        <div class="btn-group-vertical btn-group-lg w-100" role="group" aria-label="Basic radio toggle button group">
+                                            <input type="radio" class="btn-check" name="btnradio" id="smbtnradio1" value="yellow" autocomplete="off">
+                                            <label class="btn btn-light" for="btnradio1">Black+Yellow</label>
+                                          
+                                            <input type="radio" class="btn-check" name="btnradio" id="smbtnradio2" value="teal" autocomplete="off">
+                                            <label class="btn btn-light" for="btnradio2">Black+Teal</label>
+                                          
+                                            <input type="radio" class="btn-check" name="btnradio" id="smbtnradio3" value="purple" autocomplete="off">
+                                            <label class="btn btn-light" for="btnradio3">Black+Purple</label>
+                                        </div>
+                                    </div>
+                                    <div class="card-text">
+                                        <small class="text-body-secondary">Yeah, uhuh, you know what is? Black & Yellow ...</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="row mb-3 justify-content-center">
+                <div class="col-6">
+                    <button type="submit" class="btn btn-dark" form="settings-form">Apply</button>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-dark" onclick="resetPreferences()">Reset</button> 
+                </div>  
+            </div>     
+
+        </div>
+    </main>
+    <script src="js/settings.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
