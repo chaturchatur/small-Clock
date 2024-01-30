@@ -133,7 +133,7 @@ input[type=range]::-webkit-slider-thumb:active {
     }
 }
 
-@media (min-width: 991.99px) and (max-width: 1199.98px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
     body {
         overflow: hidden;
     }
@@ -150,6 +150,26 @@ input[type=range]::-webkit-slider-thumb:active {
 
     .clock-container {
         width: 275px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1889.98px) { 
+    body {
+        overflow: hidden;
+    }
+
+    .timer-text {
+        width: 325px;
+        height: 300px;
+        font-size: 225px;
+    }
+
+    .colon {
+        font-size: 175px;
+    }
+
+    .clock-container {
+        width: 325px;
     }
 }
 
