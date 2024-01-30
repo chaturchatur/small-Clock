@@ -97,7 +97,7 @@ input[type=range]::-webkit-slider-thumb:active {
     color: var(--bs-body-bg);
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 770px) {
     body {
         overflow: hidden;
     }
@@ -110,6 +110,46 @@ input[type=range]::-webkit-slider-thumb:active {
 
     .card {
         width: 300px;
+    }
+}
+
+@media (min-width: 771px) and (max-width: 991.98px) {
+    body {
+        overflow: hidden;
+    }
+
+    .timer-text {
+        width: 250px;
+        height: 200px;
+        font-size: 150px;
+    }
+
+    .colon {
+        font-size: 100px;
+    }
+
+    .clock-container {
+        width: 250px;
+    }
+}
+
+@media (min-width: 991.99px) and (max-width: 1199.98px) {
+    body {
+        overflow: hidden;
+    }
+
+    .timer-text {
+        width: 275px;
+        height: 200px;
+        font-size: 175px;
+    }
+
+    .colon {
+        font-size: 125px;
+    }
+
+    .clock-container {
+        width: 275px;
     }
 }
 
