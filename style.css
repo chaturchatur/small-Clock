@@ -97,6 +97,16 @@ input[type=range]::-webkit-slider-thumb:active {
     color: var(--bs-body-bg);
 }
 
+.btn-outline-dark {
+    color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-outline-dark:hover {
+    color: var(--bs-black);
+    background-color: var(--bs-primary);
+}
+
 @media (max-width: 770px) {
     body {
         overflow: hidden;

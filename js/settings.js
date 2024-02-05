@@ -1,4 +1,4 @@
-localStorage.setItem("preferredColour", "yellow");
+// localStorage.setItem("preferredColour", "");
 var htmlElement = document.documentElement;
 var radioButtons = document.querySelectorAll('input[name="btnradio"]');
 
@@ -13,6 +13,12 @@ const colorsRGB = {
     teal : "100, 255, 218",
     purple: "83, 109, 254"
 };
+
+const radioButtonMap = {
+    yellow : "btnradio1",
+    teal : "btnradio2",
+    purple: "btnradio3",
+}
 
 // Add a change event listener to each radio button
 radioButtons.forEach(function(radioButton) {
@@ -30,6 +36,8 @@ radioButtons.forEach(function(radioButton) {
 
 function setPreferences(){
     var selectColour = localStorage.getItem("preferredColour");
+    var selectedRadio = document.getElementById(radioButtonMap[selectColour]);
+    selectedRadio.checked = true;
     htmlElement.setAttribute("data-bs-theme", selectColour);
 }
 
