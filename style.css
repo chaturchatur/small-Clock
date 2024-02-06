@@ -1,5 +1,5 @@
-body {
-    overflow: hidden;
+.main {
+    justify-content: center;
 }
 
 .navbar-brand, .nav-link{
@@ -112,6 +112,10 @@ input[type=range]::-webkit-slider-thumb:active {
         overflow: hidden;
     }
 
+    .main {
+        justify-content: start;
+    }
+
     .timer-text {
         width: 350px;
         height: 200px;
@@ -124,10 +128,6 @@ input[type=range]::-webkit-slider-thumb:active {
 }
 
 @media (min-width: 771px) and (max-width: 991.98px) {
-    body {
-        overflow: hidden;
-    }
-
     .timer-text {
         width: 250px;
         height: 200px;
@@ -144,10 +144,6 @@ input[type=range]::-webkit-slider-thumb:active {
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    body {
-        overflow: hidden;
-    }
-
     .timer-text {
         width: 275px;
         height: 200px;
@@ -164,10 +160,6 @@ input[type=range]::-webkit-slider-thumb:active {
 }
 
 @media (min-width: 1200px) and (max-width: 1889.98px) { 
-    body {
-        overflow: hidden;
-    }
-
     .timer-text {
         width: 325px;
         height: 300px;
