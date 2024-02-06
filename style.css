@@ -108,10 +108,6 @@ input[type=range]::-webkit-slider-thumb:active {
 }
 
 @media (max-width: 770px) {
-    body {
-        overflow: hidden;
-    }
-
     .main {
         justify-content: start;
     }
@@ -144,6 +140,11 @@ input[type=range]::-webkit-slider-thumb:active {
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    .main {
+        justify-content: center;
+
+    }
+
     .timer-text {
         width: 275px;
         height: 200px;
@@ -160,6 +161,10 @@ input[type=range]::-webkit-slider-thumb:active {
 }
 
 @media (min-width: 1200px) and (max-width: 1889.98px) { 
+    .main {
+        justify-content: center;
+    }
+
     .timer-text {
         width: 325px;
         height: 300px;
