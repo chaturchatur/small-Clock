@@ -8,7 +8,6 @@ function playSound(){
   audio.play();
 }
 
-
 function openFullscreen() {
   var elem = document.documentElement;
   if (elem.requestFullscreen) {
